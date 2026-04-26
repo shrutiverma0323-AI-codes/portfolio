@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Verma | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">SV</a>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Shruti Verma</h1>
+            <h2 class="hero-title">Software Engineer</h2>
+            <p class="hero-description">
+                Building scalable distributed systems and AI-powered solutions at SAP Labs.
+                Passionate about turning complex problems into elegant, efficient code.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2000+</span>
+                    <span class="stat-label">Enterprise Customers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">125+</span>
+                    <span class="stat-label">PRs Delivered</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">shruti</span> = {
+  <span class="property">role</span>: <span class="string">"Software Engineer"</span>,
+  <span class="property">company</span>: <span class="string">"SAP Labs"</span>,
+  <span class="property">passion</span>: [
+    <span class="string">"Distributed Systems"</span>,
+    <span class="string">"AI/GenAI"</span>,
+    <span class="string">"Microservices"</span>
+  ],
+  <span class="property">coffee</span>: <span class="boolean">true</span>
+};</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Software Engineer at <strong>SAP Labs India</strong>, where I contribute to the
+                        <strong>Ariba Next-Gen Procurement platform</strong> serving 2,000+ enterprise customers worldwide.
+                    </p>
+                    <p>
+                        My expertise lies in building <strong>scalable distributed systems</strong>,
+                        <strong>event-driven architectures</strong>, and <strong>production-grade backend services</strong>.
+                        I work extensively with Java, Spring Boot, Kafka, and microservices.
+                    </p>
+                    <p>
+                        Recently, I've been exploring the intersection of AI and developer productivity,
+                        building <strong>LLM-powered automation</strong> and <strong>multi-agent systems</strong>
+                        that dramatically reduce development time while maintaining high code quality.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <span class="highlight-icon">🎓</span>
+                            <div>
+                                <strong>M.Tech Software Engineering</strong>
+                                <span>BITS Pilani</span>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">📍</span>
+                            <div>
+                                <strong>Bengaluru, India</strong>
+                                <span>Open to opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>SV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Associate Application Engineer</h3>
+                            <span class="company">SAP Labs India</span>
+                            <span class="duration">Aug 2022 - Present</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <strong>AI Innovation:</strong> Built MCP-powered multi-agent pipeline converting UI mockups to Fiori code —
+                                <span class="metric">92% accuracy</span>, <span class="metric">95% dev time reduction</span> (4 hrs → 10 min)
+                            </li>
+                            <li>
+                                <strong>Feature Ownership:</strong> Owned Auto-Receiving feature end-to-end; implemented rule engines reducing
+                                <span class="metric">manual intervention by 70%</span>
+                            </li>
+                            <li>
+                                <strong>Module Leadership:</strong> Led Split Accounting across requisition and ordering — reduced
+                                <span class="metric">errors by 60%</span>
+                            </li>
+                            <li>
+                                <strong>Event-Driven Systems:</strong> Built Kafka features processing
+                                <span class="metric">10K+ events/day</span> for real-time procurement workflows
+                            </li>
+                            <li>
+                                <strong>High Delivery:</strong> Delivered <span class="metric">125+ PRs</span> across 3 microservices with
+                                <span class="metric">98% merge success rate</span>
+                            </li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>SAP CAP</span>
+                            <span>Kafka</span>
+                            <span>UI5</span>
+                            <span>Fiori</span>
+                            <span>LangChain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-icon">🤖</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">AI / Multi-Agent</span>
+                        <h3>Fiori Page Generator</h3>
+                        <p>
+                            7-agent AI pipeline using MCP protocol to convert UI mockups into production Fiori code.
+                            Achieves 92%+ code accuracy with 95% time reduction. Currently piloting across 3 SAP teams.
+                        </p>
+                        <div class="project-tech">
+                            <span>MCP Protocol</span>
+                            <span>LangGraph</span>
+                            <span>Multi-Agent</span>
+                            <span>Fiori</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">92%</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Time Saved</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">📊</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">ML / Analytics</span>
+                        <h3>User Behavior Analytics Platform</h3>
+                        <p>
+                            ML dashboard with K-Means segmentation and Decision Tree churn prediction.
+                            Generates INVEST/KILL/FIX product recommendations with 82% prediction accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>K-Means</span>
+                            <span>Decision Tree</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">📝</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">AI Agent</span>
+                        <h3>AI Content Summarizer Agent</h3>
+                        <p>
+                            LangGraph agent with A2A protocol supporting 6 content types (videos, PDFs, web pages)
+                            and multiple LLM providers (Groq, Claude, OpenAI) with configurable outputs.
+                        </p>
+                        <div class="project-tech">
+                            <span>LangGraph</span>
+                            <span>A2A Protocol</span>
+                            <span>Multi-LLM</span>
+                        </div>
+                        <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">🔬</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">IoT</span>
+                        <h3>Hazardous Gas Monitoring System</h3>
+                        <p>
+                            NodeMCU-based sensor system detecting LPG, propane, and methane
+                            with real-time mobile alerts via Blynk within seconds of gas detection.
+                        </p>
+                        <div class="project-tech">
+                            <span>NodeMCU</span>
+                            <span>IoT</span>
+                            <span>Blynk</span>
+                            <span>Sensors</span>
+                        </div>
+                        <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publication-card">
+                <div class="publication-icon">📄</div>
+                <div class="publication-content">
+                    <h3>Unveiling User Behavior in Enterprise Applications</h3>
+                    <p class="publication-venue">SAP TechNxt 2024 | Under Review: Solovyov Studies ISPU (UGC-CARE Journal)</p>
+                    <p>
+                        Analytics framework (EDA, k-NN, Decision Trees) on 100K+ user records - predicts feature adoption & churn;
+                        addresses 70% feature underutilization in enterprise software.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>AI & GenAI</h3>
+                    <div class="skill-tags">
+                        <span>Generative AI</span>
+                        <span>LangChain</span>
+                        <span>LangGraph</span>
+                        <span>Hugging Face</span>
+                        <span>LLM Orchestration</span>
+                        <span>Multi-Agent Systems</span>
+                        <span>MCP Server Dev</span>
+                        <span>RAG Pipelines</span>
+                        <span>A2A Protocol</span>
+                        <span>Prompt Engineering</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span>Java</span>
+                        <span>TypeScript</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>C/C++</span>
+                        <span>Node.js</span>
+                        <span>Spring Boot</span>
+                        <span>SAP CAP</span>
+                        <span>Kafka</span>
+                        <span>UI5</span>
+                        <span>Fiori Elements</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud, Tools & Testing</h3>
+                    <div class="skill-tags">
+                        <span>Cloud Foundry</span>
+                        <span>Distributed Systems</span>
+                        <span>CI/CD</span>
+                        <span>Agile/Scrum</span>
+                        <span>REST APIs</span>
+                        <span>SonarQube</span>
+                        <span>SQLite</span>
+                        <span>JUnit 5</span>
+                        <span>Unit Testing</span>
+                        <span>API Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <span class="cert-year">2024</span>
+                    <h4>GenAI with LangChain & Hugging Face</h4>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-year">2023</span>
+                    <h4>Product Analytics (Pendo)</h4>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-year">2023</span>
+                    <h4>JavaScript (NamasteDev)</h4>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-year">2022</span>
+                    <h4>IoT (Tacthub)</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-intro">
+                I'm always open to discussing new opportunities, innovative projects, or just having a chat about technology.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:shruti.verma230301@gmail.com" class="contact-card">
+                    <span class="contact-icon">📧</span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">shruti.verma230301@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/shruti2303" target="_blank" class="contact-card">
+                    <span class="contact-icon">💼</span>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/shruti2303</span>
+                </a>
+                <a href="https://github.com/shrutiverma0323-AI-codes" target="_blank" class="contact-card">
+                    <span class="contact-icon">💻</span>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">shrutiverma0323-AI-codes</span>
+                </a>
+                <a href="tel:+916264074702" class="contact-card">
+                    <span class="contact-icon">📱</span>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+91-6264074702</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by Shruti Verma</p>
+            <p class="footer-location">Bengaluru, India</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
