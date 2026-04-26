@@ -6,21 +6,35 @@
     <title>Shruti Verma | Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">SV</a>
+            <a href="#" class="nav-logo">
+                <span class="logo-text">SV</span>
+                <span class="logo-dot"></span>
+            </a>
             <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <a href="#contact" class="nav-cta">Hire Me</a>
             <button class="nav-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -31,94 +45,191 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <p class="hero-greeting">Hi, I'm</p>
-            <h1 class="hero-name">Shruti Verma</h1>
-            <h2 class="hero-title">Software Engineer</h2>
-            <p class="hero-description">
-                Building scalable distributed systems and AI-powered solutions at SAP Labs.
-                Passionate about turning complex problems into elegant, efficient code.
-            </p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for opportunities</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name-highlight">Shruti Verma</span>
+                </h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-static">I'm a</span>
+                    <span class="hero-title-dynamic">
+                        <span class="typing-text"></span>
+                        <span class="typing-cursor">|</span>
+                    </span>
+                </div>
+                <p class="hero-description">
+                    Building <span class="text-gradient">scalable distributed systems</span> and
+                    <span class="text-gradient">AI-powered solutions</span> at SAP Labs,
+                    serving 2000+ enterprise customers worldwide.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="/Users/i527261/Resume/Shruti-Verma-Resume.pdf" class="btn btn-secondary" download>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+
+                <!-- Floating Stats -->
+                <div class="hero-stats">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <span class="stat-number" data-count="2000">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Customers</span>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <span class="stat-number" data-count="125">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">PRs Merged</span>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                        <span class="stat-number" data-count="92">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">AI Accuracy</span>
+                    </div>
+                </div>
             </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">3+</span>
-                    <span class="stat-label">Years Experience</span>
+
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <div class="profile-glow"></div>
+                    <div class="profile-image">
+                        <div class="profile-placeholder">
+                            <span>SV</span>
+                        </div>
+                        <div class="profile-ring"></div>
+                        <div class="profile-ring ring-2"></div>
+                    </div>
+                    <div class="profile-badge">
+                        <span class="badge-icon">💼</span>
+                        <span>SAP Labs</span>
+                    </div>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">2000+</span>
-                    <span class="stat-label">Enterprise Customers</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">125+</span>
-                    <span class="stat-label">PRs Delivered</span>
+
+                <!-- Floating Tech Icons -->
+                <div class="floating-icons">
+                    <div class="float-icon icon-1">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <div class="float-icon icon-2">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    </div>
+                    <div class="float-icon icon-3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                    </div>
+                    <div class="float-icon icon-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring">
+                    </div>
+                    <div class="float-icon icon-5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="hero-visual">
-            <div class="code-window">
-                <div class="code-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                </div>
-                <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">shruti</span> = {
-  <span class="property">role</span>: <span class="string">"Software Engineer"</span>,
-  <span class="property">company</span>: <span class="string">"SAP Labs"</span>,
-  <span class="property">passion</span>: [
-    <span class="string">"Distributed Systems"</span>,
-    <span class="string">"AI/GenAI"</span>,
-    <span class="string">"Microservices"</span>
-  ],
-  <span class="property">coffee</span>: <span class="boolean">true</span>
-};</code></pre>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
+            <span>Scroll Down</span>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        I'm a Software Engineer at <strong>SAP Labs India</strong>, where I contribute to the
-                        <strong>Ariba Next-Gen Procurement platform</strong> serving 2,000+ enterprise customers worldwide.
-                    </p>
-                    <p>
-                        My expertise lies in building <strong>scalable distributed systems</strong>,
-                        <strong>event-driven architectures</strong>, and <strong>production-grade backend services</strong>.
-                        I work extensively with Java, Spring Boot, Kafka, and microservices.
-                    </p>
-                    <p>
-                        Recently, I've been exploring the intersection of AI and developer productivity,
-                        building <strong>LLM-powered automation</strong> and <strong>multi-agent systems</strong>
-                        that dramatically reduce development time while maintaining high code quality.
-                    </p>
+                    <div class="about-card glass-card">
+                        <p class="lead">
+                            I'm a <strong>Software Engineer</strong> at <span class="highlight">SAP Labs India</span>,
+                            contributing to the Ariba Next-Gen Procurement platform that powers procurement
+                            for <strong>2,000+ enterprise customers</strong> worldwide.
+                        </p>
+                        <p>
+                            My expertise spans <strong>distributed systems</strong>, <strong>event-driven architectures</strong>,
+                            and <strong>production-grade backend services</strong>. I work daily with Java, Spring Boot,
+                            Kafka, and microservices to build scalable solutions.
+                        </p>
+                        <p>
+                            Recently, I've been pioneering the intersection of <strong>AI and developer productivity</strong> —
+                            building multi-agent systems that have reduced development time by <span class="metric">95%</span>
+                            while maintaining <span class="metric">92% code accuracy</span>.
+                        </p>
+                    </div>
+
                     <div class="about-highlights">
-                        <div class="highlight">
-                            <span class="highlight-icon">🎓</span>
-                            <div>
-                                <strong>M.Tech Software Engineering</strong>
-                                <span>BITS Pilani</span>
+                        <div class="highlight-card glass-card">
+                            <div class="highlight-icon">🎓</div>
+                            <div class="highlight-content">
+                                <h4>M.Tech Software Engineering</h4>
+                                <p>BITS Pilani • 2022-2024</p>
                             </div>
                         </div>
-                        <div class="highlight">
-                            <span class="highlight-icon">📍</span>
-                            <div>
-                                <strong>Bengaluru, India</strong>
-                                <span>Open to opportunities</span>
+                        <div class="highlight-card glass-card">
+                            <div class="highlight-icon">📍</div>
+                            <div class="highlight-content">
+                                <h4>Bengaluru, India</h4>
+                                <p>Open to opportunities</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card glass-card">
+                            <div class="highlight-icon">📄</div>
+                            <div class="highlight-content">
+                                <h4>Published Researcher</h4>
+                                <p>SAP TechNxt 2024</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <span>SV</span>
+
+                <div class="about-visual">
+                    <div class="code-showcase glass-card">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">shruti.config.ts</span>
+                        </div>
+                        <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Shruti Verma"</span>,
+  <span class="property">role</span>: <span class="string">"Software Engineer"</span>,
+  <span class="property">company</span>: <span class="string">"SAP Labs"</span>,
+
+  <span class="property">skills</span>: {
+    <span class="property">backend</span>: [<span class="string">"Java"</span>, <span class="string">"Spring"</span>, <span class="string">"Kafka"</span>],
+    <span class="property">ai</span>: [<span class="string">"LangChain"</span>, <span class="string">"LangGraph"</span>],
+    <span class="property">cloud</span>: [<span class="string">"Cloud Foundry"</span>, <span class="string">"CI/CD"</span>]
+  },
+
+  <span class="property">passion</span>: <span class="string">"Building systems that scale"</span>,
+  <span class="property">status</span>: <span class="string">"Ready for new challenges"</span>
+};</code></pre>
                     </div>
                 </div>
             </div>
@@ -128,47 +239,100 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
+            <div class="section-header">
+                <span class="section-tag">My journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+
+            <div class="experience-card glass-card">
+                <div class="exp-header">
+                    <div class="exp-company">
+                        <div class="company-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg" alt="SAP">
+                        </div>
+                        <div class="company-info">
                             <h3>Associate Application Engineer</h3>
-                            <span class="company">SAP Labs India</span>
-                            <span class="duration">Aug 2022 - Present</span>
+                            <span class="company-name">SAP Labs India</span>
                         </div>
-                        <ul class="timeline-achievements">
-                            <li>
-                                <strong>AI Innovation:</strong> Built MCP-powered multi-agent pipeline converting UI mockups to Fiori code —
-                                <span class="metric">92% accuracy</span>, <span class="metric">95% dev time reduction</span> (4 hrs → 10 min)
-                            </li>
-                            <li>
-                                <strong>Feature Ownership:</strong> Owned Auto-Receiving feature end-to-end; implemented rule engines reducing
-                                <span class="metric">manual intervention by 70%</span>
-                            </li>
-                            <li>
-                                <strong>Module Leadership:</strong> Led Split Accounting across requisition and ordering — reduced
-                                <span class="metric">errors by 60%</span>
-                            </li>
-                            <li>
-                                <strong>Event-Driven Systems:</strong> Built Kafka features processing
-                                <span class="metric">10K+ events/day</span> for real-time procurement workflows
-                            </li>
-                            <li>
-                                <strong>High Delivery:</strong> Delivered <span class="metric">125+ PRs</span> across 3 microservices with
-                                <span class="metric">98% merge success rate</span>
-                            </li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>SAP CAP</span>
-                            <span>Kafka</span>
-                            <span>UI5</span>
-                            <span>Fiori</span>
-                            <span>LangChain</span>
+                    </div>
+                    <div class="exp-duration">
+                        <span class="duration-badge">Aug 2022 - Present</span>
+                    </div>
+                </div>
+
+                <div class="exp-description">
+                    <p>Contributing to <strong>SAP Ariba Next-Gen Procurement platform</strong> serving 2000+ enterprise customers worldwide.</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🤖</div>
+                        <h4>AI Innovation</h4>
+                        <p>Built MCP-powered multi-agent pipeline converting UI mockups to Fiori code</p>
+                        <div class="achievement-metrics">
+                            <span class="metric-badge success">92% Accuracy</span>
+                            <span class="metric-badge success">95% Time Saved</span>
                         </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">⚙️</div>
+                        <h4>Feature Ownership</h4>
+                        <p>Owned Auto-Receiving feature end-to-end using Java, Spring Boot, SAP CAP</p>
+                        <div class="achievement-metrics">
+                            <span class="metric-badge">70% Less Manual Work</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">📊</div>
+                        <h4>Module Leadership</h4>
+                        <p>Led Split Accounting across requisition and ordering workflows</p>
+                        <div class="achievement-metrics">
+                            <span class="metric-badge">60% Error Reduction</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">⚡</div>
+                        <h4>Event Architecture</h4>
+                        <p>Built Kafka event-driven features for real-time procurement workflows</p>
+                        <div class="achievement-metrics">
+                            <span class="metric-badge">10K+ Events/Day</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🚀</div>
+                        <h4>High Delivery</h4>
+                        <p>Led receiving module development with exceptional delivery metrics</p>
+                        <div class="achievement-metrics">
+                            <span class="metric-badge">125+ PRs</span>
+                            <span class="metric-badge">98% Success</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🐛</div>
+                        <h4>Quality Focus</h4>
+                        <p>Resolved critical defects with 100% demo success rate</p>
+                        <div class="achievement-metrics">
+                            <span class="metric-badge">30 Critical Fixes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-label">Tech Stack:</span>
+                    <div class="tech-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>SAP CAP</span>
+                        <span>Kafka</span>
+                        <span>UI5</span>
+                        <span>Fiori</span>
+                        <span>LangChain</span>
+                        <span>TypeScript</span>
                     </div>
                 </div>
             </div>
@@ -178,122 +342,173 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <span class="section-tag">What I've built</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
             <div class="projects-grid">
-                <article class="project-card featured">
-                    <div class="project-image">
-                        <div class="project-icon">🤖</div>
+                <!-- Featured Project -->
+                <article class="project-card featured glass-card">
+                    <div class="project-spotlight"></div>
+                    <div class="project-header">
+                        <span class="project-label">🏆 Featured Project</span>
+                        <div class="project-links">
+                            <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank" title="View Source">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <span class="project-tag">AI / Multi-Agent</span>
                         <h3>Fiori Page Generator</h3>
-                        <p>
-                            7-agent AI pipeline using MCP protocol to convert UI mockups into production Fiori code.
-                            Achieves 92%+ code accuracy with 95% time reduction. Currently piloting across 3 SAP teams.
+                        <p class="project-subtitle">Multi-Agent AI Pipeline</p>
+                        <p class="project-description">
+                            Revolutionary 7-agent AI pipeline using MCP protocol to convert UI mockups
+                            into production-ready Fiori code. Currently being piloted across 3 SAP teams.
                         </p>
-                        <div class="project-tech">
-                            <span>MCP Protocol</span>
-                            <span>LangGraph</span>
-                            <span>Multi-Agent</span>
-                            <span>Fiori</span>
-                        </div>
                         <div class="project-metrics">
-                            <div class="metric-item">
+                            <div class="metric-box">
                                 <span class="metric-value">92%</span>
-                                <span class="metric-label">Accuracy</span>
+                                <span class="metric-label">Code Accuracy</span>
                             </div>
-                            <div class="metric-item">
+                            <div class="metric-box">
                                 <span class="metric-value">95%</span>
                                 <span class="metric-label">Time Saved</span>
                             </div>
+                            <div class="metric-box">
+                                <span class="metric-value">4h→10m</span>
+                                <span class="metric-label">Dev Time</span>
+                            </div>
                         </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>MCP Protocol</span>
+                        <span>LangGraph</span>
+                        <span>Multi-Agent</span>
+                        <span>Fiori</span>
+                        <span>GenAI</span>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">📊</div>
+                <!-- Project 2 -->
+                <article class="project-card glass-card">
+                    <div class="project-header">
+                        <span class="project-icon">📊</span>
+                        <div class="project-links">
+                            <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <span class="project-tag">ML / Analytics</span>
-                        <h3>User Behavior Analytics Platform</h3>
-                        <p>
+                        <h3>User Behavior Analytics</h3>
+                        <p class="project-subtitle">ML-Powered Dashboard</p>
+                        <p class="project-description">
                             ML dashboard with K-Means segmentation and Decision Tree churn prediction.
-                            Generates INVEST/KILL/FIX product recommendations with 82% prediction accuracy.
+                            Generates INVEST/KILL/FIX product recommendations.
                         </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>K-Means</span>
-                            <span>Decision Tree</span>
-                            <span>Streamlit</span>
+                        <div class="project-highlight">
+                            <span class="highlight-metric">82%</span>
+                            <span>Prediction Accuracy</span>
                         </div>
-                        <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">
-                            View on GitHub →
-                        </a>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>K-Means</span>
+                        <span>Decision Tree</span>
+                        <span>Streamlit</span>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">📝</div>
+                <!-- Project 3 -->
+                <article class="project-card glass-card">
+                    <div class="project-header">
+                        <span class="project-icon">📝</span>
+                        <div class="project-links">
+                            <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <span class="project-tag">AI Agent</span>
-                        <h3>AI Content Summarizer Agent</h3>
-                        <p>
-                            LangGraph agent with A2A protocol supporting 6 content types (videos, PDFs, web pages)
-                            and multiple LLM providers (Groq, Claude, OpenAI) with configurable outputs.
+                        <h3>AI Content Summarizer</h3>
+                        <p class="project-subtitle">LangGraph Agent</p>
+                        <p class="project-description">
+                            Intelligent agent supporting 6 content types (videos, PDFs, web pages)
+                            with multiple LLM providers (Groq, Claude, OpenAI).
                         </p>
-                        <div class="project-tech">
-                            <span>LangGraph</span>
-                            <span>A2A Protocol</span>
-                            <span>Multi-LLM</span>
+                        <div class="project-highlight">
+                            <span class="highlight-metric">6</span>
+                            <span>Content Types Supported</span>
                         </div>
-                        <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">
-                            View on GitHub →
-                        </a>
+                    </div>
+                    <div class="project-tech">
+                        <span>LangGraph</span>
+                        <span>A2A Protocol</span>
+                        <span>Multi-LLM</span>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">🔬</div>
+                <!-- Project 4 -->
+                <article class="project-card glass-card">
+                    <div class="project-header">
+                        <span class="project-icon">🔬</span>
+                        <div class="project-links">
+                            <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <span class="project-tag">IoT</span>
-                        <h3>Hazardous Gas Monitoring System</h3>
-                        <p>
+                        <h3>IoT Gas Monitor</h3>
+                        <p class="project-subtitle">Real-time Alert System</p>
+                        <p class="project-description">
                             NodeMCU-based sensor system detecting LPG, propane, and methane
-                            with real-time mobile alerts via Blynk within seconds of gas detection.
+                            with real-time mobile alerts via Blynk.
                         </p>
-                        <div class="project-tech">
-                            <span>NodeMCU</span>
-                            <span>IoT</span>
-                            <span>Blynk</span>
-                            <span>Sensors</span>
+                        <div class="project-highlight">
+                            <span class="highlight-metric">&lt;5s</span>
+                            <span>Alert Response Time</span>
                         </div>
-                        <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">
-                            View on GitHub →
-                        </a>
+                    </div>
+                    <div class="project-tech">
+                        <span>NodeMCU</span>
+                        <span>IoT</span>
+                        <span>Blynk</span>
+                        <span>Sensors</span>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Publications Section -->
-    <section class="publications">
+    <!-- Publication Section -->
+    <section class="publication">
         <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="publication-card">
+            <div class="publication-card glass-card">
                 <div class="publication-icon">📄</div>
                 <div class="publication-content">
+                    <span class="publication-badge">Research Publication</span>
                     <h3>Unveiling User Behavior in Enterprise Applications</h3>
-                    <p class="publication-venue">SAP TechNxt 2024 | Under Review: Solovyov Studies ISPU (UGC-CARE Journal)</p>
-                    <p>
-                        Analytics framework (EDA, k-NN, Decision Trees) on 100K+ user records - predicts feature adoption & churn;
-                        addresses 70% feature underutilization in enterprise software.
+                    <p class="publication-venue">
+                        <strong>SAP TechNxt 2024</strong> | Under Review: Solovyov Studies ISPU (UGC-CARE Journal)
                     </p>
+                    <p class="publication-description">
+                        Analytics framework (EDA, k-NN, Decision Trees) on 100K+ user records —
+                        predicts feature adoption & churn; addresses 70% feature underutilization in enterprise software.
+                    </p>
+                    <div class="publication-stats">
+                        <span><strong>100K+</strong> User Records</span>
+                        <span><strong>70%</strong> Problem Addressed</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -302,53 +517,111 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>AI & GenAI</h3>
-                    <div class="skill-tags">
-                        <span>Generative AI</span>
-                        <span>LangChain</span>
-                        <span>LangGraph</span>
+            <div class="section-header">
+                <span class="section-tag">My toolkit</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">🤖</span>
+                        <h3>AI & GenAI</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">LangChain</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">LangGraph</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Multi-Agent Systems</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">RAG Pipelines</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Prompt Engineering</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags-mini">
                         <span>Hugging Face</span>
-                        <span>LLM Orchestration</span>
-                        <span>Multi-Agent Systems</span>
-                        <span>MCP Server Dev</span>
-                        <span>RAG Pipelines</span>
+                        <span>MCP Server</span>
                         <span>A2A Protocol</span>
-                        <span>Prompt Engineering</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Languages & Frameworks</h3>
-                    <div class="skill-tags">
-                        <span>Java</span>
-                        <span>TypeScript</span>
-                        <span>JavaScript</span>
-                        <span>Python</span>
+
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">💻</span>
+                        <h3>Languages & Frameworks</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags-mini">
                         <span>SQL</span>
+                        <span>JavaScript</span>
                         <span>C/C++</span>
-                        <span>Node.js</span>
-                        <span>Spring Boot</span>
-                        <span>SAP CAP</span>
-                        <span>Kafka</span>
-                        <span>UI5</span>
-                        <span>Fiori Elements</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Cloud, Tools & Testing</h3>
-                    <div class="skill-tags">
-                        <span>Cloud Foundry</span>
-                        <span>Distributed Systems</span>
-                        <span>CI/CD</span>
-                        <span>Agile/Scrum</span>
+
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">☁️</span>
+                        <h3>Cloud & Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Kafka</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Cloud Foundry</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CI/CD</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SAP CAP</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI5/Fiori</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags-mini">
                         <span>REST APIs</span>
-                        <span>SonarQube</span>
-                        <span>SQLite</span>
                         <span>JUnit 5</span>
-                        <span>Unit Testing</span>
-                        <span>API Testing</span>
+                        <span>SonarQube</span>
                     </div>
                 </div>
             </div>
@@ -358,22 +631,30 @@
     <!-- Certifications Section -->
     <section class="certifications">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+
             <div class="cert-grid">
-                <div class="cert-card">
-                    <span class="cert-year">2024</span>
+                <div class="cert-card glass-card">
+                    <div class="cert-year">2024</div>
+                    <div class="cert-icon">🤖</div>
                     <h4>GenAI with LangChain & Hugging Face</h4>
                 </div>
-                <div class="cert-card">
-                    <span class="cert-year">2023</span>
+                <div class="cert-card glass-card">
+                    <div class="cert-year">2023</div>
+                    <div class="cert-icon">📊</div>
                     <h4>Product Analytics (Pendo)</h4>
                 </div>
-                <div class="cert-card">
-                    <span class="cert-year">2023</span>
+                <div class="cert-card glass-card">
+                    <div class="cert-year">2023</div>
+                    <div class="cert-icon">⚡</div>
                     <h4>JavaScript (NamasteDev)</h4>
                 </div>
-                <div class="cert-card">
-                    <span class="cert-year">2022</span>
+                <div class="cert-card glass-card">
+                    <div class="cert-year">2022</div>
+                    <div class="cert-icon">🔬</div>
                     <h4>IoT (Tacthub)</h4>
                 </div>
             </div>
@@ -383,31 +664,48 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-intro">
-                I'm always open to discussing new opportunities, innovative projects, or just having a chat about technology.
-            </p>
-            <div class="contact-links">
-                <a href="mailto:shruti.verma230301@gmail.com" class="contact-card">
-                    <span class="contact-icon">📧</span>
-                    <span class="contact-label">Email</span>
-                    <span class="contact-value">shruti.verma230301@gmail.com</span>
-                </a>
-                <a href="https://linkedin.com/in/shruti2303" target="_blank" class="contact-card">
-                    <span class="contact-icon">💼</span>
-                    <span class="contact-label">LinkedIn</span>
-                    <span class="contact-value">linkedin.com/in/shruti2303</span>
-                </a>
-                <a href="https://github.com/shrutiverma0323-AI-codes" target="_blank" class="contact-card">
-                    <span class="contact-icon">💻</span>
-                    <span class="contact-label">GitHub</span>
-                    <span class="contact-value">shrutiverma0323-AI-codes</span>
-                </a>
-                <a href="tel:+916264074702" class="contact-card">
-                    <span class="contact-icon">📱</span>
-                    <span class="contact-label">Phone</span>
-                    <span class="contact-value">+91-6264074702</span>
-                </a>
+            <div class="section-header">
+                <span class="section-tag">Get in touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-intro glass-card">
+                    <h3>Ready to build something amazing?</h3>
+                    <p>
+                        I'm always excited to discuss new opportunities, innovative projects,
+                        or just chat about AI, distributed systems, and technology.
+                    </p>
+                    <a href="mailto:shruti.verma230301@gmail.com" class="btn btn-primary btn-large">
+                        <span>Say Hello</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="contact-links">
+                    <a href="mailto:shruti.verma230301@gmail.com" class="contact-card glass-card">
+                        <div class="contact-icon">📧</div>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">shruti.verma230301@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/shruti2303" target="_blank" class="contact-card glass-card">
+                        <div class="contact-icon">💼</div>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/shruti2303</span>
+                    </a>
+                    <a href="https://github.com/shrutiverma0323-AI-codes" target="_blank" class="contact-card glass-card">
+                        <div class="contact-icon">💻</div>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">shrutiverma0323-AI-codes</span>
+                    </a>
+                    <a href="tel:+916264074702" class="contact-card glass-card">
+                        <div class="contact-icon">📱</div>
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+91-6264074702</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -415,8 +713,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>Designed & Built by Shruti Verma</p>
-            <p class="footer-location">Bengaluru, India</p>
+            <div class="footer-content">
+                <p>Designed & Built with ❤️ by <strong>Shruti Verma</strong></p>
+                <p class="footer-location">📍 Bengaluru, India</p>
+            </div>
         </div>
     </footer>
 
