@@ -982,6 +982,424 @@ body {
     color: #94a3b8;
 }
 
+/* Now Section */
+.section-now {
+    padding: 40px 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(6, 182, 212, 0.03));
+    border-top: 1px solid #2a2a3a;
+    border-bottom: 1px solid #2a2a3a;
+}
+
+.now-card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 32px;
+    background: #12121a;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 16px;
+}
+
+.now-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #6366f1, #06b6d4);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.now-card p {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.now-card strong {
+    color: #f1f5f9;
+}
+
+.now-cta {
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Demo Video */
+.demo-video {
+    margin: 24px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+}
+
+.demo-video video {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.video-caption {
+    padding: 12px 16px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #94a3b8;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* Demo Placeholder */
+.demo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px dashed #3a3a4a;
+    border-radius: 12px;
+    margin: 24px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.demo-placeholder:hover {
+    border-color: #6366f1;
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.demo-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6366f1, #06b6d4);
+    border-radius: 50%;
+    color: white;
+}
+
+.demo-placeholder span {
+    font-weight: 600;
+    color: #f1f5f9;
+    font-size: 1.1rem;
+}
+
+.demo-placeholder small {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* Architecture Diagram */
+.architecture-diagram {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #2a2a3a;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+.arch-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #818cf8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.arch-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.arch-node {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.arch-node.input {
+    background: rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    color: #818cf8;
+}
+
+.arch-node.output {
+    background: rgba(16, 185, 129, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    color: #10b981;
+}
+
+.arch-node.agent {
+    background: #1a1a2a;
+    border: 1px solid #3a3a4a;
+    color: #94a3b8;
+    padding: 8px 14px;
+    font-size: 0.75rem;
+}
+
+.arch-agents {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.arch-arrow {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #6366f1;
+}
+
+/* Before/After Comparison */
+.comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 24px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.comparison-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 20px 32px;
+    border-radius: 12px;
+}
+
+.comparison-item.before {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.comparison-item.after {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.comparison-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.comparison-item.before .comparison-label {
+    color: #ef4444;
+}
+
+.comparison-item.after .comparison-label {
+    color: #10b981;
+}
+
+.comparison-value {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #f1f5f9;
+}
+
+.comparison-desc {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.comparison-vs {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+/* Mini Architecture for smaller cards */
+.mini-architecture {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.mini-arch-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #818cf8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.mini-arch-flow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mini-node {
+    padding: 6px 12px;
+    background: #1a1a2a;
+    border: 1px solid #3a3a4a;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+.mini-node.parallel {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+    color: #818cf8;
+}
+
+.mini-arrow {
+    color: #6366f1;
+    font-weight: bold;
+}
+
+/* Sample Output */
+.sample-output {
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.sample-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #10b981;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.sample-recommendation {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rec-verdict {
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.rec-verdict.invest {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+.rec-verdict.kill {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.rec-verdict.fix {
+    background: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+}
+
+.rec-text {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* Expanded project card */
+.project-card.expanded {
+    grid-column: span 1;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #0a0a0f;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: #12121a;
+    border: 1px solid #2a2a3a;
+    border-left: 4px solid #6366f1;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.testimonial-quote {
+    font-size: 1.05rem;
+    color: #f1f5f9;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #818cf8;
+}
+
+.author-role {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.testimonial-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 32px;
+    background: rgba(99, 102, 241, 0.03);
+    border: 2px dashed #2a2a3a;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.placeholder-icon {
+    font-size: 2.5rem;
+    opacity: 0.5;
+}
+
+.testimonial-placeholder span {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.testimonial-placeholder small {
+    color: #4a5568;
+    font-size: 0.8rem;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .hero-grid {
@@ -1084,5 +1502,31 @@ body {
         width: 180px;
         height: 180px;
         font-size: 3.5rem;
+    }
+
+    /* Responsive for new sections */
+    .comparison {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .comparison-vs {
+        transform: rotate(90deg);
+    }
+
+    .arch-flow {
+        flex-direction: column;
+    }
+
+    .arch-arrow {
+        transform: rotate(90deg);
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .now-card {
+        padding: 24px 20px;
     }
 }

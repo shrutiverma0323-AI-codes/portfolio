@@ -91,6 +91,22 @@
         </div>
     </section>
 
+    <!-- Now Section -->
+    <section class="section-now">
+        <div class="container">
+            <div class="now-card">
+                <span class="now-badge">What I'm Working On Now</span>
+                <p>
+                    Building <strong>AI agents with Claude Code</strong>, shipping production systems using LLMs and agentic development.
+                    Exploring <strong>Vertex AI</strong>, <strong>Gemini APIs</strong>, and multi-LLM orchestration.
+                </p>
+                <p class="now-cta">
+                    Open to: <span class="highlight">AI engineering roles at product companies</span>.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="section about">
         <div class="container">
@@ -101,17 +117,17 @@
             <div class="about-grid">
                 <div class="about-content">
                     <p class="about-lead">
-                        I'm a <strong>Software Engineer</strong> at <span class="highlight">SAP Labs India</span>,
-                        contributing to the Ariba Next-Gen Procurement platform.
+                        I build <strong>AI systems that actually ship</strong> — not demos, not prototypes.
                     </p>
                     <p>
-                        My expertise spans <strong>distributed systems</strong>, <strong>event-driven architectures</strong>,
-                        and <strong>production-grade backend services</strong>. I work with Java, Spring Boot,
-                        Kafka, and microservices daily.
+                        My MCP pipeline is <span class="metric">live across 3 SAP teams</span>. My Kafka architecture
+                        processes <span class="metric">10K+ procurement events daily</span> for 2000+ enterprise customers.
+                        I publish research (<span class="highlight">SAP TechNxt 2024</span>) and I'm actively targeting
+                        AI engineering roles at product-led companies.
                     </p>
                     <p>
-                        Recently, I built a <strong>multi-agent AI pipeline</strong> that reduced development time by
-                        <span class="metric">95%</span> while maintaining <span class="metric">92% code accuracy</span>.
+                        Currently at <strong>SAP Labs India</strong>, building the next-gen Ariba Procurement platform
+                        with Java, Spring Boot, and multi-agent AI systems.
                     </p>
                     <div class="about-cards">
                         <div class="about-card">
@@ -264,10 +280,55 @@
             </div>
             <div class="projects-grid">
                 <article class="project-card featured">
-                    <div class="project-badge">🏆 Featured</div>
+                    <div class="project-badge">Featured</div>
                     <h3>Fiori Page Generator</h3>
                     <p class="project-subtitle">Multi-Agent AI Pipeline</p>
                     <p>Revolutionary 7-agent AI pipeline using MCP protocol to convert UI mockups into production-ready Fiori code. Piloting across 3 SAP teams.</p>
+
+                    <!-- Video Demo -->
+                    <div class="demo-video">
+                        <video controls poster="demo-poster.jpg" preload="metadata">
+                            <source src="fiori-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-caption">60-second pipeline walkthrough: UI Mockup → Production Fiori Code</div>
+                    </div>
+
+                    <!-- Architecture Diagram -->
+                    <div class="architecture-diagram">
+                        <div class="arch-title">Pipeline Architecture</div>
+                        <div class="arch-flow">
+                            <div class="arch-node input">UI Mockup</div>
+                            <div class="arch-arrow"></div>
+                            <div class="arch-agents">
+                                <div class="arch-node agent">Vision</div>
+                                <div class="arch-node agent">Scanner</div>
+                                <div class="arch-node agent">Matcher</div>
+                                <div class="arch-node agent">Generator</div>
+                                <div class="arch-node agent">Validator</div>
+                                <div class="arch-node agent">Reviewer</div>
+                                <div class="arch-node agent">Deployer</div>
+                            </div>
+                            <div class="arch-arrow"></div>
+                            <div class="arch-node output">Fiori Code</div>
+                        </div>
+                    </div>
+
+                    <!-- Before/After Comparison -->
+                    <div class="comparison">
+                        <div class="comparison-item before">
+                            <span class="comparison-label">Before</span>
+                            <span class="comparison-value">4 hours</span>
+                            <span class="comparison-desc">Manual coding</span>
+                        </div>
+                        <div class="comparison-vs">vs</div>
+                        <div class="comparison-item after">
+                            <span class="comparison-label">After</span>
+                            <span class="comparison-value">10 min</span>
+                            <span class="comparison-desc">AI pipeline</span>
+                        </div>
+                    </div>
+
                     <div class="project-stats">
                         <div class="project-stat">
                             <span class="project-stat-value">92%</span>
@@ -278,8 +339,8 @@
                             <span class="project-stat-label">Time Saved</span>
                         </div>
                         <div class="project-stat">
-                            <span class="project-stat-value">4h→10m</span>
-                            <span class="project-stat-label">Dev Time</span>
+                            <span class="project-stat-value">3</span>
+                            <span class="project-stat-label">Teams Piloting</span>
                         </div>
                     </div>
                     <div class="project-tags">
@@ -316,13 +377,35 @@
                     <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">View on GitHub →</a>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card expanded">
                     <span class="project-icon">🛒</span>
                     <h3>Customer Insight Agents</h3>
                     <p class="project-subtitle">Multi-Agent Analytics Platform</p>
                     <p>7-agent AI pipeline analyzing e-commerce data with parallel-sequential hybrid architecture. Processes 285M+ events for segmentation and churn prediction.</p>
+
+                    <!-- Agent Architecture Mini -->
+                    <div class="mini-architecture">
+                        <div class="mini-arch-label">Agent Architecture</div>
+                        <div class="mini-arch-flow">
+                            <span class="mini-node">Data Loader</span>
+                            <span class="mini-arrow">→</span>
+                            <span class="mini-node parallel">Segment | Churn | Revenue</span>
+                            <span class="mini-arrow">→</span>
+                            <span class="mini-node">Recommender</span>
+                        </div>
+                    </div>
+
+                    <!-- Sample Output -->
+                    <div class="sample-output">
+                        <div class="sample-label">Sample Output</div>
+                        <div class="sample-recommendation">
+                            <span class="rec-verdict invest">INVEST</span>
+                            <span class="rec-text">High-value segment with 23% churn risk</span>
+                        </div>
+                    </div>
+
                     <div class="project-highlight">
-                        <span class="highlight-value">7</span> Coordinated Agents
+                        <span class="highlight-value">285M+</span> Events Processed
                     </div>
                     <div class="project-tags">
                         <span>LangGraph</span><span>scikit-learn</span><span>Streamlit</span><span>K-Means</span>
@@ -357,6 +440,30 @@
                     <h3>Unveiling User Behavior in Enterprise Applications</h3>
                     <p class="publication-venue"><strong>SAP TechNxt 2024</strong> | Under Review: UGC-CARE Journal</p>
                     <p>Analytics framework on 100K+ user records - predicts feature adoption & churn; addresses 70% feature underutilization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Colleagues Say</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"The MCP pipeline Shruti built reduced our team's UI development time by 95%. It's now in pilot across 3 teams and changing how we approach Fiori development."</div>
+                    <div class="testimonial-author">
+                        <span class="author-name">— SAP Ariba Team</span>
+                        <span class="author-role">Internal Feedback</span>
+                    </div>
+                </div>
+                <div class="testimonial-placeholder">
+                    <span class="placeholder-icon">💬</span>
+                    <span>Your testimonial could be here</span>
+                    <small>Add quotes from colleagues or managers</small>
                 </div>
             </div>
         </div>
