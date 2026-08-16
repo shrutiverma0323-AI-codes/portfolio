@@ -40,11 +40,12 @@
                     <h1 class="hero-title">
                         Hi, I'm <span class="gradient-text">Shruti Verma</span>
                     </h1>
-                    <p class="hero-subtitle">Software Engineer at <strong>SAP Labs</strong></p>
+                    <p class="hero-subtitle">Full-Stack &amp; Generative AI Engineer at <strong>SAP Labs</strong></p>
                     <p class="hero-description">
-                        Building scalable distributed systems and AI-powered solutions,
-                        serving <strong>2000+ enterprise customers</strong> worldwide.
-                        Specialized in Java, Python, distributed systems, and GenAI.
+                        4 years at SAP Labs designing enterprise procurement systems and production-grade agentic AI.
+                        Owns the end-to-end receipt lifecycle serving <strong>2,000+ global customers</strong> —
+                        <strong>175+ PRs across 13 repos</strong>, 16 microservices, 10K+ Kafka events/day.
+                        Co-created a <strong>7-agent MCP pipeline</strong> now piloted across 3 global teams.
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
@@ -58,7 +59,7 @@
                     </div>
                     <div class="hero-stats">
                         <div class="stat">
-                            <span class="stat-value">3+</span>
+                            <span class="stat-value">4+</span>
                             <span class="stat-label">Years Exp</span>
                         </div>
                         <div class="stat">
@@ -66,7 +67,7 @@
                             <span class="stat-label">Customers</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-value">125+</span>
+                            <span class="stat-value">175+</span>
                             <span class="stat-label">PRs Merged</span>
                         </div>
                         <div class="stat">
@@ -163,7 +164,7 @@
                         </div>
                         <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
   <span class="code-prop">name</span>: <span class="code-string">"Shruti Verma"</span>,
-  <span class="code-prop">role</span>: <span class="code-string">"Software Engineer"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full-Stack &amp; GenAI Engineer"</span>,
   <span class="code-prop">company</span>: <span class="code-string">"SAP Labs"</span>,
   <span class="code-prop">skills</span>: [
     <span class="code-string">"Java"</span>, <span class="code-string">"Spring"</span>,
@@ -187,14 +188,48 @@
             <div class="experience-card">
                 <div class="exp-header">
                     <div class="exp-info">
-                        <h3>Associate Application Engineer</h3>
+                        <h3>Full-Stack &amp; GenAI Engineer</h3>
                         <p class="exp-company">SAP Labs India</p>
                     </div>
-                    <span class="exp-date">Aug 2022 - Present</span>
+                    <span class="exp-date">Jan 2022 - Present</span>
                 </div>
-                <p class="exp-desc">Contributing to SAP Ariba Next-Gen Procurement platform serving 2000+ enterprise customers worldwide.</p>
+                <p class="exp-desc">Contributing to SAP Ariba Next-Gen Procurement platform serving 2,000+ enterprise customers — 16 microservices, 13 repos, 10K+ Kafka events/day.</p>
 
                 <div class="achievements">
+                    <div class="achievement">
+                        <span class="achievement-icon">✅</span>
+                        <div>
+                            <h4>Receipt Approval Workflow</h4>
+                            <p>Most complex feature on the platform: distributed approval state machine with CDS Outbox pattern (cross-team PDRS integration), Kafka consumer for sBPA events, and rebalancing algorithm preventing double-receiving data corruption. Fully agentic delivery — pa-architect generated a 1,017-line machine-readable spec; pa-developer scaffolded all service classes from it.</p>
+                            <div class="achievement-tags">
+                                <span class="tag success">Jul 2026</span>
+                                <span class="tag success">3,832 Lines</span>
+                                <span class="tag">Cross-team</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <span class="achievement-icon">🧩</span>
+                        <div>
+                            <h4>onebx-ui-lib — Shared Component Library</h4>
+                            <p>Active contributor to the enterprise SAPUI5 component library (~18K source files) shared across all OneBX procurement apps: receiving, requisition, ordering, and catalog. Changes propagate to all downstream teams; contributions undergo cross-team review with Checkmarx security scanning.</p>
+                            <div class="achievement-tags">
+                                <span class="tag">Cross-team</span>
+                                <span class="tag">18K Source Files</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <span class="achievement-icon">🖥️</span>
+                        <div>
+                            <h4>Receiving UI — End-to-End Fiori Application</h4>
+                            <p>Built the Receipt Object Page from scratch: 26 XML fragments covering edit mode, confirmation dialogs, cross-navigation, Report Issue, Correction of Receipt, and status filter components. Implemented approval graph integration and item-level status tracking; upgraded to SAPUI5 v1.149. Architected Segmented Search engine with dynamic filter bar and 100+ external supplier store federation.</p>
+                            <div class="achievement-tags">
+                                <span class="tag">55+ PRs</span>
+                                <span class="tag">SAPUI5 v1.149</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="achievement">
                         <span class="achievement-icon">🤖</span>
                         <div>
@@ -240,9 +275,9 @@
                         <span class="achievement-icon">🚀</span>
                         <div>
                             <h4>High Delivery</h4>
-                            <p>Led receiving module development with exceptional metrics</p>
+                            <p>175+ PRs across 13 repos with 98% merge success rate; directly owns 21% of the core receiving module's code delivery</p>
                             <div class="achievement-tags">
-                                <span class="tag">125+ PRs</span>
+                                <span class="tag">175+ PRs</span>
                                 <span class="tag">98% Success Rate</span>
                             </div>
                         </div>
@@ -265,6 +300,7 @@
                         <span>LLM</span><span>Claude Code</span><span>MCP</span>
                         <span>Java</span><span>Spring Boot</span><span>SAP CAP</span><span>Kafka</span>
                         <span>UI5</span><span>Fiori</span><span>LangChain</span><span>TypeScript</span>
+                        <span>SAP BTP</span><span>OData V4</span><span>CDS Outbox</span><span>State Machine</span>
                     </div>
                 </div>
             </div>
@@ -367,7 +403,7 @@
                     <div class="project-tags">
                         <span>Python</span><span>K-Means</span><span>Decision Tree</span>
                     </div>
-                    <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">View on GitHub →</a>
+                    <a href="https://github.com/shrutiverma0323-AI-codes/customer-insight-agents" class="project-link" target="_blank">View on GitHub →</a>
                 </article>
 
                 <article class="project-card">
@@ -384,7 +420,7 @@
                     <div class="project-tags">
                         <span>LangGraph</span><span>A2A Protocol</span><span>Multi-LLM</span>
                     </div>
-                    <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">View on GitHub →</a>
+                    <a href="https://github.com/shrutiverma0323-AI-codes/content-summarizer-agent" class="project-link" target="_blank">View on GitHub →</a>
                 </article>
 
                 <article class="project-card">
@@ -418,9 +454,7 @@
                     <div class="project-tags">
                         <span>NodeMCU</span><span>IoT</span><span>Blynk</span>
                     </div>
-                    <a href="https://github.com/shrutiverma0323-AI-codes" class="project-link" target="_blank">View on GitHub →</a>
-                </article>
-            </div>
+                    <a href="https://github.com/shrutiverma0323-AI-codes/IoT-Hazardous-Gas-Monitoring-System" class="project-link" target="_blank">View on GitHub →</a>
         </div>
     </section>
 
@@ -454,6 +488,7 @@
                         <span>Machine Learning</span><span>LangChain</span><span>LangGraph</span>
                         <span>Multi-Agent Systems</span><span>RAG Pipelines</span><span>Prompt Engineering</span>
                         <span>Hugging Face</span><span>MCP Server</span><span>A2A Protocol</span>
+                        <span>Computer Vision</span><span>LLM Routing</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -461,6 +496,7 @@
                     <div class="skill-tags">
                         <span>Java</span><span>TypeScript</span><span>Python</span><span>JavaScript</span>
                         <span>Spring Boot</span><span>Node.js</span><span>SAP CAP</span><span>SQL</span>
+                        <span>React</span><span>Streamlit</span><span>OData V4</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -468,6 +504,15 @@
                     <div class="skill-tags">
                         <span>Kafka</span><span>Cloud Foundry</span><span>CI/CD</span><span>REST APIs</span>
                         <span>UI5/Fiori</span><span>JUnit 5</span><span>SonarQube</span><span>Git</span>
+                        <span>SAP BTP</span><span>SAP HANA</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3><span class="skill-icon">🏗️</span> Patterns & Architecture</h3>
+                    <div class="skill-tags">
+                        <span>Transactional CDS Outbox</span><span>Event-Driven Architecture</span>
+                        <span>State Machine Design</span><span>Rule Engine</span>
+                        <span>Microservices</span><span>ThreadPoolExecutor Concurrency</span>
                     </div>
                 </div>
             </div>
